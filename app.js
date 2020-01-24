@@ -10,12 +10,20 @@ const employees = [
 ];
 
 const list = document.querySelector('ul');
+// const item = document.querySelectorAll('li')
 
 const render = () => {
-    return employees.map(employee => {
-        const html = `<li>${employee.name}</li>`;  
-        list.innerHTML = html;
-    }).join('')
+    const html = employees.map(employee => {
+         return `<li>${employee.name}</li>`;  
+    }).join('');
+
+    list.innerHTML = html;
 }
 
 render();
+
+list.addEventListener('click', (ev) => {
+    const.target = ev.target;
+    if(target.tagName === 'LI');
+    console.log(target)
+})

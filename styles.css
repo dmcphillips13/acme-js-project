@@ -1,12 +1,27 @@
-body {
-    font-family: sans-serif;
-}
-
-li {
+*{
+    box-sizing: border-box;
+  }
+  body {
+    font-family: verdana;
+  }
+  
+  ul {
     display: flex;
-    border: 1px black solid;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+  
+  ul li {
     border-radius: 1rem;
-    justify-content: center;
+    margin: 1rem;
     padding: 1rem;
-    background-color: skyblue;
-}
+    border: solid 1px black;
+    width: calc(100% / 3 - 2rem);
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+  }
+
+  .favorite {
+    background-color: linen;
+  }
