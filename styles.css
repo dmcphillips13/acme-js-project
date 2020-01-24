@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+}
+
+li {
+    display: flex;
+    border: 1px black solid;
+    border-radius: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    background-color: skyblue;
+}
